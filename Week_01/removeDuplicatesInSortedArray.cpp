@@ -1,3 +1,12 @@
+#include<iostream>
+#include"stdio.h"
+#include"string.h"
+#include <vector>
+
+using namespace std;  
+
+class Solution {
+ public:    
     int removeDuplicates(vector<int>& nums) {
         //检查数组是否为空
         if (nums.size() == 0) 
@@ -13,3 +22,11 @@
         }
         return i+1; //返回数组中唯一元素的总个数
     }
+};
+
+int main() {
+   Solution ob;
+   vector<int> v = {0,0,0,1,1,1,1,2,3,3};
+   cout << ob.removeDuplicates(v);
+   return 0;
+}
