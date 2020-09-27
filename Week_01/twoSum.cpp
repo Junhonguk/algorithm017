@@ -11,8 +11,7 @@ public:
         vector<int> twoSums;
         for (int i = 0 ; i < nums.size() - 1; i++ )
             for (int j = i+1; j < nums.size(); j++)
-                if(nums[i] + nums[j] == target)
-                {
+                if (nums[i] + nums[j] == target) {
                     twoSums.push_back(i);
                     twoSums.push_back(j);
                     return twoSums;
